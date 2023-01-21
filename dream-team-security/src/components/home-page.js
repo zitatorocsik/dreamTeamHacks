@@ -23,8 +23,7 @@ function HomePage(props) {
         id="todo-add-text"
         ref={passwordRef}
         type="text"
-        placeholder="Add Task"
-      />
+        placeholder="Enter password"/>
       <button className="check-button" onClick={handleCheckPassword}>Judge Me</button>
       <CheckPassword password={password} />
     </div>
