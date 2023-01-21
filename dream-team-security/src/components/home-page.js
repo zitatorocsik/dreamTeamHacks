@@ -19,13 +19,13 @@ function HomePage(props) {
   return (
     <div id="home-page">
       <h1 className="home-header-style">Home Page</h1>
-      <input
+      <input className="password-input"
         id="todo-add-text"
         ref={passwordRef}
         type="text"
         placeholder="Add Task"
       />
-      <button onClick={handleCheckPassword}>Add</button>
+      <button className="check-button" onClick={handleCheckPassword}>Judge Me</button>
       <CheckPassword password={password} />
     </div>
   );
