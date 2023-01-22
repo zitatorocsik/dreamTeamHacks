@@ -20,6 +20,7 @@ function HomePage(props) {
   }
 
   return (
+  
     <div id="home-page">
       <h1 className="home-header-style">How long can Heimdall protect your password?</h1>
       <div className="body"></div>
