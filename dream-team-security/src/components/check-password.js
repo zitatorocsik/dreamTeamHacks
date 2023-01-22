@@ -59,8 +59,10 @@ function CheckPassword(props) {
          
         return (
         <div>
-        {/* remove the button and use the onClick event from the button in the HomePage component */}
-        </div>
+<div id="check-password">
+      <h1>Check Password</h1>
+      <p>Password Strength: {strength}</p>
+    </div>        </div>
         );
         }
         
