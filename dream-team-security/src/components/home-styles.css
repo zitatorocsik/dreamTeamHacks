@@ -65,11 +65,11 @@
 }
 
 #check-password {
-    display: none;
     font-family: area-normal, sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 20px;
+    position: absolute;
 }
 
 .head {
