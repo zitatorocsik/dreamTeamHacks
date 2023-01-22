@@ -4,6 +4,7 @@ import CheckPassword from "./check-password";
 import "./home-styles.css";
 import $ from 'jquery';
 import 'jquery';
+import { Helmet } from 'react-helmet'
 
 
 function HomePage(props) {
@@ -25,6 +26,10 @@ function HomePage(props) {
       <h1 className="home-header-style">How long can Heimdall protect your password?</h1>
       <div className="body"></div>
       <div>
+        <Helmet>
+  <title>My Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</Helmet>
 
         <input className="password-input"
         id="todo-add-text"
