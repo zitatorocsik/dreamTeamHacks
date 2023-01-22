@@ -1,7 +1,11 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "argon2": "^0.30.3",
     "bcryptjs": "^2.4.3",
     "zxcvbn": "^4.4.2"
+=======
+    "jquery": "^3.6.3"
+>>>>>>> 27d35e667781b4ad847d59a42088424bde30da4b
   }
 }

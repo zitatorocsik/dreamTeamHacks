@@ -1,3 +1,6 @@
+import React, { useState } from "react";
+import { useRef } from "react";
+
 function CheckPassword(props) {
   // use the password from the home page
   const password = props.password;
