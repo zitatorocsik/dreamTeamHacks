@@ -3,7 +3,6 @@ import { useRef } from "react";
 import CheckPassword from "./check-password";
 import "./home-styles.css";
 import $ from 'jquery';
-import 'jquery';
 import { Helmet } from 'react-helmet';
 
 
@@ -58,6 +57,8 @@ function HomePage(props) {
 
 }
 
+
+
 $(".move-area").mousemove(function(event) {
   var eye = $(".eye");
   console.log('eye', eye)
@@ -72,5 +73,4 @@ $(".move-area").mousemove(function(event) {
     'transform': 'rotate(' + rot + 'deg)'
   });
 });
-
 export default HomePage;
