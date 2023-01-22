@@ -34,10 +34,10 @@ function HomePage(props) {
       
 
       <div className="head"></div>
-      <section class="move-area">
-  <div class='.container'>
-    <div class='eye'></div>
-    <div class='eye'></div>
+      <section className="move-area">
+  <div className='.container'>
+    <div className='eye'></div>
+    <div className='eye'></div>
   </div>
 </section>
 
