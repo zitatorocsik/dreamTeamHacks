@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useRef } from "react";
+import "./home-styles.css";
+
 
 function CheckPassword(props) {
   //use the password from the home page

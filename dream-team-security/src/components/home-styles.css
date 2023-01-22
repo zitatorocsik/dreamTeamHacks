@@ -6,42 +6,52 @@
 
 .password-input {
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     width: 696px;
     height: 63px;
-    left: 408px;
-    top: 462px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 350px;
+
     background: #F5F5F5;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+
     font-size: 20px;
-    font-family: area-normal,sans-serif;
-font-weight: 900;
-font-style: normal;
-padding: 30px;
+    font-family: area-normal, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    padding: 30px;
 }
 
 .check-button {
     box-sizing: border-box;
-    position: absolute;
+
     width: 218px;
     height: 63px;
-    left: 900px;
-    top: 462px;
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    top: 400px;
+
     border: none;
     background: #FEC601;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     outline: none;
-    font-family: area-normal,sans-serif;
-font-weight: 900;
-font-style: normal;
-font-size: 20px;
+    font-family: area-normal, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
 
 }
+
 .check-button:focus {
     outline: none;
+    cursor: pointer;
 }
 
 
@@ -49,4 +59,115 @@ font-size: 20px;
 .check-button:hover {
     background-color: #FFD747;
     transition: 0.3s;
+    cursor: pointer;
+}
+
+#check-password {
+    display: none;
+    font-family: area-normal, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.head {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 106px;
+    height: 128px;
+    left: 685px;
+    top: 200px;
+
+    background: #F8DAC9;
+    border: none;
+
+    border-radius: 50%;
+}
+
+.body {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 245px;
+    height: 158px;
+    left: 620px;
+    top: 300px;
+
+    background: #445262;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30%;
+}
+
+.brow-one {
+    position: absolute;
+    width: 23.46px;
+    height: 4.34px;
+    left: 746.22px;
+    top: 260px;
+
+    background: #532300;
+    transform: rotate(0deg);
+}
+
+.brow-two {
+    position: absolute;
+    width: 23.46px;
+    height: 4.44px;
+    left: 704.73px;
+    top: 260px;
+
+    background: #532300;
+    transform: rotate(0deg);
+}
+
+.brows {
+    border-radius: 30%;
+    top: 254px;
+}
+
+.move-area{/*normally use body*/
+    width: 100vw;
+    height: 100vh;
+
+  }
+  .container {
+    width: 100%;
+    left: 100px;
+    position: relative;
+  }
+  .eye {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background: white;
+    border: none;
+    margin: 5px;
+    left: 2px;
+    top: 70px;
+  }
+  .eye:after { /*pupil*/
+    position: absolute;
+    bottom: 17px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    content: " ";
+  }
+
+.mouth {
+
+position: absolute;
+width: 24px;
+height: 2px;
+left: 725px;
+top: 311px;
+
+background: #1C0000;
+border-radius: 70px;
 }
