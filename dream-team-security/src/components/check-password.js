@@ -2,52 +2,49 @@ import React, { useState } from "react";
 import { useRef } from "react";
 
 function CheckPassword(props) {
-  //use the password from the home page
-  const password = props.password;
 
-  function StrengthChecker(password) {
-    let strength = 0;
+  const [password, setPassword] = useState(props.password);
+  const [securityLevel, setSecurityLevel] = useState("");
 
-    // Check for lowercase letters
-    if (password.match(/[a-z]+/)) {
-      strength += 25;
+  function checkPassword() {
+    let score = 0;
+    if (password.length >= 8) {
+      score++;
+    }
+    if (password.match(/[a-z]/)) {
+      score++;
+    }
+    if (password.match(/[A-Z]/)) {
+      score++;
+    }
+    if (password.match(/\d+/)) {
+      score++;
+    }
+    if (password.match(/[!@#\$%\^&\*]/)) {
+      score++;
+    }
+    if (!password.match(/(.)\1{2}/)) {
+      score++;
     }
 
-    // Check for uppercase letters
-    if (password.match(/[A-Z]+/)) {
-      strength += 25;
+    if (score === 6) {
+      setSecurityLevel("Very strong");
+    } else if (score >= 4) {
+      setSecurityLevel("Strong");
+    } else if (score >= 3) {
+      setSecurityLevel("Moderate");
+    } else {
+      setSecurityLevel("Weak");
     }
-
-    // Check for numbers
-    if (password.match(/[0-9]+/)) {
-      strength += 25;
-    }
-
-    // Check for special characters
-    if (password.match(/[$@#&!]+/)) {
-      strength += 25;
-    }
-
-    // Check for minimum length
-    if (password.length < 6) {
-      return "Minimum length of password is 6";
-    }
-
-    // Check for maximum length
-    if (password.length > 12) {
-      return "Maximum length of password is 12";
-    }
-
-    return strength;
   }
 
     return (
         <div id="check-password">
             <h1>Check Password</h1>
-            <p>Password Strength: {StrengthChecker(password)}</p>
+            <p>Password Strength: {CheckPassword(props.password)}</p>
         </div>
     );
-    
+
 
 }
 
