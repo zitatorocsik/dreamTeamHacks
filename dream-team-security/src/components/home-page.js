@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { useRef } from "react";
 import CheckPassword from "./check-password";
 import "./home-styles.css";
-import $ from "jquery";
+import $ from 'jquery';
+import 'jquery';
+
 
 function HomePage(props) {
   const [password, setPassword] = useState("");
@@ -40,7 +42,6 @@ function HomePage(props) {
     <div className='eye'></div>
   </div>
 </section>
-
       <div className="brows brow-one"></div>
       <div className="brows brow-two"></div>
       <div className="mouth"></div>
