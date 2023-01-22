@@ -22,11 +22,11 @@ function CheckPassword(props) {
       }
     }
     if(password.length <= 4){
-      strength = "too Short";
+      strength = "Instantly";
       //strength = 1;
     }
     else if (array[0] && password.length <= 10) {
-      strength = "Low";
+      strength = "Instantly";
       //strength = 333;
     } else if (
       (array[3] && !array[2]  && password.length <= 7) ||
@@ -34,7 +34,7 @@ function CheckPassword(props) {
       (array[2] && array[3] && array[0] && password.length <= 5) ||
       (array[2] && array[3] && array[0] && array[1] && password.length <= 5)
     ) {
-      strength = "Low-Medium";
+      strength = "Less than a Day";
       //strength = 55;
     } else if (
       (array[0] && password.length >= 11 && password.length <= 15) ||
@@ -43,7 +43,7 @@ function CheckPassword(props) {
       (array[2] && array[3] && array[0] && password.length >= 6 && password.length <= 8) ||
       (array[2] && array[3] && array[0] && array[1] && password.length >= 6 && password.length <= 8)
     ) {
-      strength = "Medium";
+      strength = "Very Few Years";
     } else if (
       (array[0] && password.length >= 16 && password.length <= 18) ||
       (array[3] && !array[2] && password.length >= 11 && password.length <= 13) ||
@@ -51,14 +51,14 @@ function CheckPassword(props) {
       (array[2] && array[3] && array[0] && password.length >= 9 && password.length <= 10) ||
       (array[2] && array[3] && array[0] && array[1] && password.length >= 9 && password.length <= 10)
     ) {
-      strength = "Medium-High";
+      strength = "Many many decades";
     } else if (
       (array[0] && password.length > 18) ||
       (array[3] && !array[2] && password.length > 14) ||
         (array[2] && array[3] && array[0] && password.length >= 11 && password.length > 13) ||
         (array[2] && array[3] && array[0] && array[1] && password.length >11 )
         ) {
-        strength = "High";
+        strength = "Millions of year even trillions";
         }
         }
         checkPasswordStrength();
@@ -66,7 +66,7 @@ function CheckPassword(props) {
         <div>
 <div id="check-password">
       <h1>Check Password</h1>
-      <p>Password Strength: {strength}</p>
+      <p>Time to be cracked: {strength}</p>
     </div>        </div>
         );
         }
