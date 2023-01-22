@@ -4,7 +4,7 @@ import CheckPassword from "./check-password";
 import "./home-styles.css";
 import $ from 'jquery';
 import 'jquery';
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
 
 
 function HomePage(props) {
