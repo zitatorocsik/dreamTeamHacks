@@ -39,7 +39,7 @@ function HomePage(props) {
       <div><button className="check-button" onClick={handleCheckPassword}>Judge Me</button>
       <CheckPassword password={password}/></div>
       
-
+<div>
       <div className="head"></div>
       <section className="move-area">
   <div className='.container'>
@@ -50,6 +50,7 @@ function HomePage(props) {
       <div className="brows brow-one"></div>
       <div className="brows brow-two"></div>
       <div className="mouth"></div>
+    </div>
     </div>
   );
 
